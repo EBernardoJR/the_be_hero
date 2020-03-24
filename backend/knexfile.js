@@ -1,4 +1,6 @@
 // Update with your config settings.
+const { db } = require('./.env')
+
 
 module.exports = {
 
@@ -6,16 +8,16 @@ module.exports = {
     client: 'sqlite3',
     connection: {
       filename: './src/database/db.sqlite'
-    }
+    },
+    migrations:{
+      directory: './src/database/migrations'
+    },
+    useNullAsDefault: true //valor padrao das colunas sera nulo
   },
 
   staging: {
     client: 'postgresql',
-    connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
-    },
+    connection: db,
     pool: {
       min: 2,
       max: 10
@@ -27,11 +29,7 @@ module.exports = {
 
   production: {
     client: 'postgresql',
-    connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
-    },
+    connection: db,
     pool: {
       min: 2,
       max: 10
