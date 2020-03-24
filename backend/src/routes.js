@@ -1,37 +1,25 @@
 const express = require('express')
-const crypto = require('crypto')
-const connection = require('./database/connection')//conexão com o bd
 const routes = express.Router()
+const ongController = require('./controllers/ongController')
+const casesController = require('./controllers/casesController')
+const profileController = require('./controllers/profileController')
+const sessionController = require('./controllers/sessionController')
+
 
 //listagem das rotas
-routes.get('/ongs', async(req, res)=>{
-    const ongs = await connection('ongs').select('*') //vai selecionar todas as ongs
-
-    return res.json(ongs)
-} )
-
+routes.get('/ongs',  ongController.index )
 
 //criar uma ong
-routes.post('/ongs', async (req, res)=>{
-    //return res.send(req.params.id)
-    const { name, email, whatsapp, city, uf } = req.body
-    const id = crypto.randomBytes(4).toString('HEX')//gerando id aleatorio
-    //inserindo os dados
-    await connection('ongs').insert({
-        id,
-        name, 
-        email,
-        whatsapp,
-        city,
-        uf
-    }).then(()=>{
-        console.log('ong cadastrada')
-    }).catch(err =>{
-        console.log(`Ocorreu um erro: ${err}`)
-    })
+routes.post('/ongs', ongController.create )
 
+routes.get('/profile', profileController.index)
+//login
+routes.post('/session', sessionController.create)
 
-    return res.json({ id })
-})
+//criação de case
+routes.post('/cases', casesController.create)
+routes.get('/cases', casesController.index)
+//deletar caso
+routes.delete('/cases/:id', casesController.delete)
 
 module.exports = routes
