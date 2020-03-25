@@ -45,7 +45,7 @@ export default function NewCase ({ history }){
         <section>
             <img src={logo} alt="be the hero"/>
             <h1>Cadastrar novo Caso</h1>
-            <p>Descreva o caso Detalhadamente para encontrar um herói capaz de resolvir isso.</p>
+            <p>Descreva o caso detalhadamente para encontrar um herói capaz de resolver isso.</p>
             <Link to="/profile" className='back-link'>
                 <FiArrowDownLeft size={16} color='#e02041'/>
                 Voltar para Home</Link>
