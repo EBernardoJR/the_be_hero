@@ -1,11 +1,11 @@
 .logon-container {
     width: 100%;
-    max-width: 11120px;
+    max-width: 1120px;
     height: 100vh;
     margin: 0 auto;/*sempre fica centralizado*/
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .logon-container section.form{
@@ -22,20 +22,11 @@
     margin-bottom: 32px;
 }
 
-.form form a{
-    display: flex;
-    align-items: center;
-    margin-top: 40px;
-    color: #41414d;
-    text-decoration: none;
-    font-weight: 500;
-    transition: opacity 0.2s;
-}
 
-.form form a:hover{
-    opacity: 0.8;
-}
-
-.form form a svg{
-    margin-right: 8px;
+@media(max-width: 650px){
+    .logon-container{
+        flex-direction: column;
+        margin-top: 300px;
+    }
+    
 }
