@@ -10,10 +10,10 @@ Este projeto foi criado com o intuito de aprofundar os conhecimentos em nodeJS, 
 *Ao entrar nos respectivos diretorios usando o terminal como administrador, rode:
 
 - Backend:
-# `yarn start` ou `npm start`
+### `yarn start` ou `npm start`
 
 -Frontend: 
-# `yarn start`
+### `yarn start`
 
 - Mobile:
-# `expo start`
+### `expo start`
