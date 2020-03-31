@@ -5,7 +5,7 @@ Este projeto foi criado com o intuito de aprofundar os conhecimentos em nodeJS, 
 - Após concluir o cadastro e receber o token a ONG pode entrar normalmente na plataforma 
 - Em seguida, a mesma pode incluir novos casos constando todas as informações requeridas, podendo excluir posteriormente 
 - Por fim, o usuário que esteja disposto a ajudar entra no app mobile e visualiza todos os casos disponiveis, podendo entrar em contato via E-mail ou Whatsapp
- 
+
 ## Tecnologias usadas:
 - Banco de dados SQLite 
 - http requests com Axios
@@ -36,4 +36,15 @@ Este projeto foi criado com o intuito de aprofundar os conhecimentos em nodeJS, 
 
 ### Cadastro dos casos da ONG
 ![alt text](assets/2020-03-31-5.png)
+
+## Interface Mobile
+
+### Inicialização
+![alt text](assets/mobile-1.jpg)
+
+### Home page
+![alt text](assets/mobile-2.jpg)
+
+### Caso
+![alt text](assets/mobile-3.jpg)
 
