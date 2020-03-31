@@ -18,8 +18,17 @@ Este projeto foi criado com o intuito de aprofundar os conhecimentos em nodeJS, 
 - Mobile:
 ### `expo start`
 
-## Interface
+## Interface Web
 
-### Web
- Login do usuário
+### Login da ONG
 ![alt text](assets/2020-03-31-2.png)
+
+### Cadastro da ONG
+![alt text](assets/2020-03-31-3.png)
+
+### Home page
+![alt text](assets/2020-03-31-4.png)
+
+### Cadastro dos casos da ONG
+![alt text](assets/2020-03-31-5.png)
+
