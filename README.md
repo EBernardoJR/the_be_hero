@@ -1,4 +1,4 @@
-## BE THE HERO
+# BE THE HERO
 
 Este projeto foi criado com o intuito de aprofundar os conhecimentos em nodeJS, React js e React-native. Consiste em um sistema no qual ongs podem divulgar casos nos quais elas estão trabalhando a fim de receber ajuda dos usuários através do aplicativo mobile. Tendo o seguinte funcionament: 
 - A ong se cadastra na plataforma Web, e logo em seguida recebe um token de acesso
@@ -22,6 +22,9 @@ Este projeto foi criado com o intuito de aprofundar os conhecimentos em nodeJS, 
 
 - Mobile:
 ### `expo start`
+OBS: ao instalar todas as dependencias rodando o script, será necessário alterar o endereço do servidor dentro do diretorio:
+#### mobile/src/services/api.js
+altere o valor da baseURL para o ip da sua maquina, assim o app poderá fazer as requisições à api rest do backend.
 
 ## Interface Web
 
